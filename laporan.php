@@ -68,7 +68,7 @@ if (!isset($_SESSION['user'])) {
     }
 
     .logout-btn:hover {
-      background-color: blue;
+      background-color:blue; 
     }
 
     /* Overlay */
@@ -114,6 +114,83 @@ if (!isset($_SESSION['user'])) {
       border-radius: 4px;
       
     }
+    .table-container {
+            overflow-x: auto;
+            margin-top: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        /* Detail card */
+    .detail-card {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .detail-header {
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+
+    .btn-blue {
+      background: blue;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+      
+    }
+
+    /* Comment section */
+    .comment-box {
+      margin-top: 30px;
+      background: white;
+      border-radius: 8px;
+      padding: 15px;
+    }
+
+    .comment-input {
+      display: flex;
+      margin-top: 10px;
+      border: 2px solid blue;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    .comment-input input {
+      flex: 1;
+      border: none;
+      padding: 8px;
+      outline: none;
+    }
+
+    .comment-input button {
+      background: blue;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      cursor: pointer;
+    }
+
+    .comment-meta {
+      font-size: 12px;
+      color: gray;
+    }
+        
   </style>
 </head>
 <body>
@@ -139,17 +216,89 @@ if (!isset($_SESSION['user'])) {
 <!-- Content -->
 <div class="content" id="content">
   <h1>LAPORAN HARIAN SISWA </h1>
-  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-    Nesciunt placeat excepturi sint recusandae nam quisquam porro ipsa provident eum amet nobis, 
-    alias veniam sit non eligendi. Obcaecati, modi! Voluptatum, tempore!</p>
+
+
+  <div class="detail-card">
+    <div class="detail-header">
+      <h2>Student Report</h2>
+      <small>Present time</small>
+    </div>
+    <p>Absen, tidak ada surat.</p>
+  
+  <!-- Komentar 1 -->
+<div class="comment-box">
+  <strong>Nama</strong>
+  <div class="comment-input">
+    <input type="text" placeholder="Tulis pesan..." />
+
+  </div>
 </div>
 
-<script>
+<!-- Komentar 2 -->
+<div class="comment-box">
+  <strong>NIS</strong>
+  <div class="comment-input">
+    <input type="text" placeholder="Tulis pesan..." />
+  </div>
+</div>
+
+<!-- Komentar 3 -->
+<div class="comment-box">
+  <strong>Email</strong>
+  <div class="comment-input">
+    <input type="text" placeholder="Tulis pesan..." />
+  </div>
+</div>
+
+<!-- Komentar 4 -->
+<div class="comment-box">
+  <strong>Jurusan</strong>
+  <div class="comment-input">
+    <input type="text" placeholder="Tulis pesan..." />
+  </div>
+</div>
+
+<!-- Komentar 5 -->
+<div class="comment-box">
+  <strong>Email</strong>
+  <div class="comment-input">
+    <input type="text" placeholder="Tulis pesan..." />
+  </div>
+</div>
+
+
+<button class="btn-blue">Tanda Selesai</button>
+
+</div>
+
+    
+<!-- </div> -->
+<div class="table-container">
+    <table>
+        
+            <tr>
+                <th>No</th>
+                <th>Aksi</th>
+                <th>Gambar</th>
+                <th>NIS</th>
+                <th>Nama</th>
+                <th>Email</th>
+                <th>Jurusan</th>
+                <th>Keterangan</th>
+                <th>Alamat</th>
+                <th>No HP</th>
+            </tr>
+    
+      </div>
+      
+      <script>
   function toggleSidebar() {
     document.getElementById('sidebar').classList.toggle('open');
     document.getElementById('overlay').classList.toggle('show');
   }
 </script>
+
+        
 
 </body>
 </html>
