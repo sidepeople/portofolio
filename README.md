@@ -12,3 +12,6 @@ you can see it here https://myindex-teal.vercel.app/
 
 <img width="1972" height="1472" alt="image" src="https://github.com/user-attachments/assets/79ac56ba-d2c1-4d43-af4d-8fed3f02c641" />
 
+<img width="3140" height="1472" alt="image" src="https://github.com/user-attachments/assets/a1d308d6-9894-4151-afd2-66c27f2d356a" />
+
+<img width="1192" height="640" alt="image" src="https://github.com/user-attachments/assets/ee517248-ce1b-47b9-a3a6-c165ce52d37d" />
